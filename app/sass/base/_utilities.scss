@@ -1,0 +1,24 @@
+.u-center-text { text-align: center !important; }
+
+.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+.u-margin-bottom-medium { margin-bottom: 4rem !important; }
+.u-margin-bottom-big { margin-bottom: 8rem !important; }
+
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-huge { margin-top: 10rem !important; }
+
+.wrap {
+    @include wrapper-full();
+}
+
+.section__wrap {
+    @include row-flex();
+    @include lg(justify-content, center);
+}
+.section-about__item {
+    @include col();
+    @include col();
+    @include size(6);
+    @include size-md(5);
+    @include size-xs(10);
+}
