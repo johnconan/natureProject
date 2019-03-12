@@ -8,17 +8,17 @@
 .u-margin-top-huge { margin-top: 10rem !important; }
 
 .wrap {
-    @include wrapper-full();
+    @include wrapper();
 }
 
 .section__wrap {
     @include row-flex();
-    @include lg(justify-content, center);
+    @include lg(justify-content, space-between);
+    @include md(justify-content, space-between);
 }
 .section-about__item {
     @include col();
-    @include col();
     @include size(6);
-    @include size-md(5);
+    @include size-md(6);
     @include size-xs(10);
 }
