@@ -1,0 +1,33 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 30rem 0;
+  margin-top: -20vh;
+  @include lg-block(){
+    padding-top: 40rem;
+  }
+  @include md-block(){
+    padding-top: 40rem;
+    padding-bottom: 55rem;
+  }
+  @include xs-block(){
+    padding-bottom: 42rem;
+  }
+
+  &__items {
+    @include row-flex();
+    @include md(justify-content, center);
+  }
+
+  &__item {
+    @include col();
+    @include size(6);
+    @include size-md(12);
+    @include size-xs(12);
+
+    @include md-block(){
+      &:not(:last-child){
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}

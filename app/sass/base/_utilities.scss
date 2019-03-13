@@ -7,18 +7,6 @@
 .u-margin-top-big { margin-top: 8rem !important; }
 .u-margin-top-huge { margin-top: 10rem !important; }
 
-.wrap {
-    @include wrapper();
-}
-
-.section__wrap {
-    @include row-flex();
-    @include lg(justify-content, space-between);
-    @include md(justify-content, space-between);
-}
-.section-about__item {
-    @include col();
-    @include size(6);
-    @include size-md(6);
-    @include size-xs(10);
+.wrapper {
+  @include wrapper();
 }
